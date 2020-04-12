@@ -1,0 +1,54 @@
+body{
+    padding: 0px 0px;
+}
+p{
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(110, 167, 3);
+    width: 80%;
+}
+fieldset{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+label{
+    display: inline-block;
+    width: 30%;
+}
+.question{
+    margin-top: -50px;
+
+}
+.score{
+    width: 66%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+select{
+    width: 67%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+textarea{
+    width: 66%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.nbr_reponse{
+    width: 10%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.button{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(110, 167, 3);
+    border-radius: 5px;
+    margin-left: 5%;
+}

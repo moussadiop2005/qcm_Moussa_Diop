@@ -1,0 +1,82 @@
+body{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    }
+/*en-tete*/
+header{
+    background-color: rgb(5, 36, 38);
+    height: 100px;
+}
+header #header, header .logo_header{
+    display: inline-block;
+}
+#header{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+.logo_header{
+    position: absolute;
+    margin-left: 2%;
+}
+#body{
+    background-image: url(../IMG/img-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 626px;
+}
+.log{
+    margin-top: 100px;
+}
+/*block 1*/
+.div{
+    margin-top: 8px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.div1{
+    background-color: rgb(81, 191, 208);
+}
+.div1 div, .div1 form{
+    display: inline-block;
+}
+/*block 2*/
+
+.div2{
+    width: 100%;
+    float: left;
+    background-color: white;
+}
+.img img, .img .identifiant{
+    float: left;
+    margin: 5% 0% 5% 8%;
+}
+.img .identifiant{
+    margin-top: 40px;
+}
+.div2 .profil, .div2 .content{
+    float: left;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.div2 .content{
+    width: 60%;
+    float: left;
+    background-color: turquoise;
+    
+}
+.div2 .profil{
+    background-color: yellow;
+    width: 30%;
+    margin-top: 50px;
+}
+span{
+    display: inline-block;
+    width: 75%;
+    margin-left: 5%;
+}
