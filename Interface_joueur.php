@@ -14,11 +14,11 @@ if ($_SESSION['connecte']!=2) {
     <link rel="stylesheet" href="asset/CSS/Interface_joueur.css">
 </head>
 <body>
-<div id="body">
-        <header>
-            <img src="asset/IMG/logo-QuizzSA.png" width="58" class="logo_header" >
-            <div id='header'>Le plaisir de jouer</div>
-        </header>
+    <div id="body">
+        <div class="header">
+            <div class="logo_header" ><img src="asset/IMG/logo-QuizzSA.png" width="58"></div>
+            <div class="text_header">Le plaisir de jouer</div>
+        </div>
         <div class="div">
             <div class="div1">
                 <div class="div11">
@@ -38,11 +38,12 @@ if ($_SESSION['connecte']!=2) {
             }
             ?>
             <div class="div2">
-                ljh
+                
                 
             
             </div>
         </div>
     </div>
+    
 </body>
 </html>
