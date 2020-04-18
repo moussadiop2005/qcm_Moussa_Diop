@@ -19,46 +19,13 @@ file_put_contents('asset/JSON/Donnee_connexion.json',$users);
     </head>
     <body>
         <div id="body">
-            <header>
-                <img src="asset/IMG/logo-QuizzSA.png" width="58" class="logo_header" >
-                <div id='header'>Le plaisir de jouer</div>
-            </header>
-            <div class="div">
-                <div class="div1">
-                    <div class="d0">Login Form</div>
-                    <img src="asset/IMG/Icônes/ic-fermer.png" class="fermer">
-                </div>
-                <form action="#" method="post" class="form">
-                    <div class="d1">
-                        <input type="text" name="user" placeholder="Login" required>
-                        <img src="asset/IMG/Icônes/ic-login.png">
-                    </div><br>
-                    <div class="d2">
-                        <input type="password" name="password" placeholder="Password" required>
-                        <img src="asset/IMG/Icônes/ic-password.png">
-                    </div><br>
-                    <button type="submit" name="submit">Connexion</button>
-                    <a href="Mini_projet_sign_user.php" class="sign">S'inscrire pour jouer?</a>
-                </form>
-                <?php
-                if (isset($_POST['submit'])) {
-                    $test=verificateur_login($_POST['user'],$_POST['password']);
-                    switch ($test) {
-                        case 0:
-                            $_SESSION['connecte']=1;
-                            $_SESSION['admin_actuel']=json_decode(file_get_contents('asset/JSON/Donnee_connexion.json'),true)[$_POST['user']];
-                            break;
-                        case 1:
-                            $_SESSION['connecte']=2;
-                            $_SESSION['joueur_actuel']=json_decode(file_get_contents('asset/JSON/Donnee_connexion.json'),true)[$_POST['user']];
-                            break;
-                        default:
-                            echo 'Indentifiant invalide';
-                            break;
-                    }
-                }
-                ?>
+            <div class="header">
+                <div class="logo_header" ><img src="asset/IMG/logo-QuizzSA.png" width="58"></div>
+                <div class="text_header">Le plaisir de jouer</div>
             </div>
+            <?php
+            require_once 'Connexion.php'
+            ?>
             <div>
                 <?php
                 switch ($_SESSION['connecte']) {
