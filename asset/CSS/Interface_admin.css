@@ -3,32 +3,27 @@ body{
     margin: 0px 0px;
     }
 /*en-tete*/
-header{
-    background-color: rgb(5, 36, 38);
+.header{
+    background-color: #042425;
     height: 100px;
 }
-header #header, header .logo_header{
-    display: inline-block;
-}
-#header{
-    width: 100%;
+.text_header{
+    position: absolute;
+    left: 35%;
     font-size: 45px;
     font-weight: bold;
-    text-align: center;
     color: white;
-    margin-top: 30px;
+    top: 20px;
 }
 .logo_header{
-    position: absolute;
     margin-left: 2%;
 }
 #body{
     background-image: url(../IMG/img-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
-    height: 626px;
+    height: 826px;
 }
 .log{
     margin-top: 100px;
@@ -41,6 +36,29 @@ header #header, header .logo_header{
 }
 .div1{
     background-color: rgb(81, 191, 208);
+    height: 100px;
+    border-radius: 5px 5px 0px 0px;
+}
+.div11{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 27%;
+}
+.logout{
+    margin-left: 20%;
+}
+.logout button{
+    height: 40px;
+    background-color: #3addd6;
+    border: 1px solid #3addd6;
+    border-top: 3px solid #8fe6e1;
+    box-shadow: 0px 0px 5px 2px rgb(94, 144, 163);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
 }
 .div1 div, .div1 form{
     display: inline-block;
@@ -49,34 +67,220 @@ header #header, header .logo_header{
 
 .div2{
     width: 100%;
+    height: 600px;
     float: left;
-    background-color: white;
+    background-color: #f8fdfd;
+    border-radius: 0px 0px 5px 5px;
+    
 }
-.img img, .img .identifiant{
+.profil img, .profil .identifiant{
     float: left;
     margin: 5% 0% 5% 8%;
 }
-.img .identifiant{
+.profil .identifiant{
     margin-top: 40px;
 }
-.div2 .profil, .div2 .content{
+.div2 .nav, .div2 .content{
     float: left;
     margin: 0.5% 0.5% 0.5% 0.5%;
 }
 
 .div2 .content{
-    width: 60%;
+    width: 59%;
+    height: 540px;
     float: left;
-    background-color: turquoise;
-    
+    padding: 15px 30px 0px 40px;
+    box-shadow: 0px 0px 10px 2px rgb(131, 130, 130);
+    border: 1px solid inherit;
+    border-radius: 10px;
 }
-.div2 .profil{
-    background-color: yellow;
+.div2 .nav{
+    box-shadow: 0px 0px 10px 2px rgb(131, 130, 130);
     width: 30%;
     margin-top: 50px;
+    border-radius: 5px;
 }
-span{
+.profil{
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(white, #51bfd0);
+    border: 1px solid inherit;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+.menu{
+    margin-top: 8px;
+    border: 1px solid inherit;
+    border-radius: 0px 0px 10px 10px;
+}
+.titre_menu{
     display: inline-block;
-    width: 75%;
-    margin-left: 5%;
+    width: 91%;
+    padding: 18px 18px;
+}
+.selection_menu{
+    display: none;
+}
+.ic-liste{
+    width: 20px;
+    height: 20px;
+    background-image: url(../IMG/Icônes/ic-liste.png);
+    position: relative;
+    left: 97%;
+    top: -20px;
+}
+.ic-ajout{
+    width: 20px;
+    height: 20px;
+    background-image: url(../IMG/Icônes/ic-ajout.png);
+    position: relative;
+    left: 97%;
+    top: -20px;
+}
+.active .ic-liste{
+    background-image: url(../IMG/Icônes/ic-liste-active.png);
+    left: 96.8%;
+}
+.active .ic-ajout{
+    background-image: url(../IMG/Icônes/ic-ajout-active.png);
+    left: 96.8%;
+}
+
+/*onglet liste des questions*/
+.nbr{
+    margin-left: 25%;
+}
+.nbr-label{
+    color: #818181;
+    font-size: 18px;
+}
+.nbr-input{
+    width: 7%;
+    height: 30px;
+    color: #818181;
+    border: 1px solid #818181;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.nbr-ok{
+    height: 35px;
+    background-color: #5e90af;
+    border: 1px solid #5e90af;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+.questions{
+    border: 1px solid #818181;
+    width: 100%;
+    height: 420px;
+    
+}
+.precedent{
+    height: 30px;
+    background-color: #3addd6;
+    border: 1px solid #3addd6;
+    color: white;
+    font-size: 16px;
+}
+.suivant{
+    height: 30px;
+    background-color: #3addd6;
+    border: 1px solid #3addd6;
+    color: white;
+    font-size: 16px;
+}
+/*onglet creer admin*/
+.avatar{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #51bfd0;
+    border-radius: 100%;
+}
+.photo{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+.form{
+    width: 40%;
+    display: block;
+}
+.form, .photo{
+    float: left;
+}
+.text-avatar{
+    text-align: center;
+}
+.head-form{
+    width: 100%;
+}
+.body-form{
+    width: 100%;
+    
+}
+.title-form{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-head{
+    color: #818181;
+}
+.label-form{
+    color: #818181;
+    margin-top: 20px;
+}
+.input-form{
+    width: 100%;
+    color: #818181;
+    height: 35px;
+    margin-top: 10px;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
+.password{
+    box-shadow: 0px 0px 5px 2px #51bfd0;
+}
+.label-avatar{
+    margin-top: 20px;
+}
+input[type="file"]{
+    width: 30%;
+    background-color: #51bfd0;
+    height: 35px;
+    margin-top: 10px;
+    border: 1px solid #51bfd0;
+    border-radius: 5px;
+    margin-left: 50%;
+}
+.submit-compte{
+    width: 50%;
+    color: white;
+    font-size: 18px;
+    background-color: #51bfd0;
+    height: 35px;
+    margin-top: 10px;
+    border: 1px solid #51bfd0;
+    border-radius: 5px;
+    margin-left: 25%;
+}
+/*contenu des onglets*/
+ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu .active{
+    border-left: 5px solid green;
+    width: 98.7%;
+    background-color: rgb(212, 212, 212);
+}
+.content .content-onglet{
+    display: none;
+}
+.content .active{
+    display: block;
 }
