@@ -22,9 +22,8 @@ body{
     background-image: url(../IMG/img-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
-    height: 626px;
+    height: 900px;
 }
 .log{
     margin-top: 100px;
@@ -34,16 +33,151 @@ body{
     width: 95%;
     margin-left: 2.5%;
 }
+/*block 1*/
 .div1{
     width: 100%;
     float: left;
-    background-color: rgb(81, 191, 208);
+    background-color: #51bfd0;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
 }
-.div1 .div11, .div1 form{
+.div1 .div11, .div1 .div12, .div1 form{
     float: left;
 }
+.div11{
+    margin-left: 2%;
+    margin-top: 8px;
+}
+.div12{
+    width: 70%;
+    margin-left: 7%;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.logout{
+    height: 40px;
+    background-color: #3addd6;
+    border: 1px solid #3addd6;
+    border-top: 3px solid #8fe6e1;
+    box-shadow: 0px 0px 5px 2px rgb(94, 144, 163);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+/*block 2*/
 .div2{
     width: 100%;
+    height: 650px;
     float: left;
+    background-color: #e6e4e4;
+    border-radius: 0px 0px 5px 5px;
+}
+.contenu{
+    float: left;
+    width: 97%;
+    height: 96%;
+    background-color: #eeeeee;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgb(102, 102, 102);
+    margin: 1% 0% 1% 1.5%;
+}
+.questions{
+    float: left;
+    width: 70%;
+    height: 94%;
+    margin: 1.5% 0% 1.5% 1%;
+    border: 1px solid #5e90af;
+    border-radius: 5px;
+}
+.scores{
+    float: left;
+    width: 25%;
+    height: 45%;
+    margin: 5% 0.5% 0% 1.5%;
+    background-color: #eeeeee;
+    
+}
+.submenu{
+    float: left;
+    width: 50%;
+    height: 40px;
+    color: #51bfd0;
+    text-align: center;
+    font-size: 18px;
+}
+.affichage{
+    width: 100%;
+    height: 100%;
     background-color: white;
+    float: left;
+}
+a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    
+}
+.menu .active{
+    width: 49%;
+    background-color: white;
+    color: #818181;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+.content-onglet{
+    display: none;
+}
+
+.affichage .active{
+    display: block;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#score-joueur{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nom{
+    width: 70%;
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+}
+.colone-score{
+    width: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+}
+.score-0{
+    text-align: center;
+    border-bottom: 4px ridge #51bfd0;
+    
+}
+.score-1{
+    text-align: center;
+    border-bottom: 4px ridge #91c3ca;
+}
+.score-2{
+    text-align: center;
+    border-bottom: 4px ridge orange;
+}
+.score-3{
+    text-align: center;
+    border-bottom: 4px ridge orangered;
+}
+.score-4{
+    text-align: center;
 }
