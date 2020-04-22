@@ -196,6 +196,8 @@ body{
     height: 150px;
     border: 3px solid #51bfd0;
     border-radius: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 .photo{
     margin-top: 40px;
@@ -263,6 +265,13 @@ input[type="file"]{
     border-radius: 5px;
     margin-left: 25%;
 }
+.error{
+    display: inline-block;
+    color: red;
+}
+.error-avatar{
+    color: red;
+}
 /*contenu des onglets*/
 ul{
     list-style-type: none;
@@ -283,4 +292,62 @@ a{
 }
 .content .active{
     display: block;
+}
+/*liste joueur*/
+.title-liste-joueur{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #818181;
+    
+}
+.liste-joueur{
+    width: 55%;
+    height: 450px;
+    margin-left: 22%;
+    border: 2px solid #5e90af;
+    border-radius: 10px;
+}
+#nbr_page{
+    display: none;
+}
+.liste-joueur .contenu-page{
+    display: none;
+    
+    border-collapse: collapse;
+}
+.liste-joueur .affiche{
+    display: block;
+    margin-left: 10%;
+}
+.page{
+    display: inline-block;
+    width: 3%;
+    text-align: center;
+}
+tr{
+    width: 100%;
+}
+.liste_nom{
+    width: 20%;
+    font-size: 22px;
+    color: #818181;
+}
+.liste_prenom{
+    width: 20%;
+    font-size: 22px;
+    color: #818181;
+}
+.liste_score{
+    width: 20%;
+    font-size: 22px;
+    color: #818181;
+    text-align: center;
+}
+th{
+    text-align: left;
 }
