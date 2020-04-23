@@ -47,6 +47,10 @@ $scores=file_get_contents('asset/JSON/Scores.json');
 $scores=json_decode($scores,true);
 $classement=classement_score($scores);
 $nbr_page=ceil(count($classement)/15);
+
+$questions=[
+    [$question,$type,$reponses]
+]
 ?>
 
 <!DOCTYPE html>
@@ -101,6 +105,22 @@ $nbr_page=ceil(count($classement)/15);
                 </div>
                 <div class="content">
                     <div class="content-onglet active" id="liste_question">
+                        <div class="nbr">
+                            <label for="nbr" class="nbr-label">Nombre de questions/Jeu</label>
+                            <input type="text" id="nbr" name="nbr_question" class="nbr-input">
+                            <button type="submit" name="submit_nbr" class="nbr-ok">OK</button>
+                        </div><br>
+                        <div>
+                            <div class="questions">
+
+                            </div><br>
+                            <button type="submit" name="precedent" class="precedent">Précedent</button>
+                            <button type="submit" name="suivant" class="suivant">Suivant</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="content-onglet" id="creer_admin">
                         <div class="form">
                             <div class="head-form">
                                 <div class="title-form">S'INCRIRE</div>
@@ -133,20 +153,6 @@ $nbr_page=ceil(count($classement)/15);
                             <div class="avatar"><img id="photo-admin" width="150"></div>
                             <div class="text-avatar">Avatar</div>
 
-                        </div>
-                    </div>
-                    <div class="content-onglet" id="creer_admin">
-                        <div class="nbr">
-                            <label for="nbr" class="nbr-label">Nombre de questions/Jeu</label>
-                            <input type="text" id="nbr" name="nbr_question" class="nbr-input">
-                            <button type="submit" name="submit_nbr" class="nbr-ok">OK</button>
-                        </div><br>
-                        <div>
-                            <div class="questions">
-
-                            </div><br>
-                            <button type="submit" name="precedent" class="precedent">Précedent</button>
-                            <button type="submit" name="suivant" class="suivant">Suivant</button>
                         </div>
                     </div>
                     <div class="content-onglet" id="liste_joueur">
